@@ -3,8 +3,8 @@ from conans import ConanFile, tools, os
 class BoostDynamic_BitsetConan(ConanFile):
     name = "Boost.Dynamic_Bitset"
     version = "1.64.0"
-    generators = "txt"
-    url = "https://github.com/boostorg/dynamic_bitset"
+    url = "https://github.com/bincrafters/conan-boost-dynamic_bitset"
+    source_url = "https://github.com/boostorg/dynamic_bitset"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_name = "dynamic_bitset"
@@ -20,7 +20,7 @@ class BoostDynamic_BitsetConan(ConanFile):
                       
     def source(self):
         self.run("git clone --depth=50 --branch=boost-{0} {1}.git"
-                 .format(self.version, self.url))
+                 .format(self.version, self.source_url))
 
     def package(self):
         include_dir = os.path.join(self.build_folder, self.lib_short_name, "include")
