@@ -8,13 +8,13 @@ class BoostDynamic_BitsetConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["dynamic_bitset"]
-    requires =  "Boost.Config/1.65.1@bincrafters/testing", \
-                      "Boost.Core/1.65.1@bincrafters/testing", \
-                      "Boost.Integer/1.65.1@bincrafters/testing", \
-                      "Boost.Move/1.65.1@bincrafters/testing", \
-                      "Boost.Serialization/1.65.1@bincrafters/testing", \
-                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
-                      "Boost.Throw_Exception/1.65.1@bincrafters/testing"
+    requires =  "Boost.Config/1.65.1@bincrafters/stable", \
+                      "Boost.Core/1.65.1@bincrafters/stable", \
+                      "Boost.Integer/1.65.1@bincrafters/stable", \
+                      "Boost.Move/1.65.1@bincrafters/stable", \
+                      "Boost.Serialization/1.65.1@bincrafters/stable", \
+                      "Boost.Static_Assert/1.65.1@bincrafters/stable", \
+                      "Boost.Throw_Exception/1.65.1@bincrafters/stable"
 
                       #config0 core2 integer3 move3 serialization11 static_assert1 throw_exception2
                       
