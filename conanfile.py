@@ -1,4 +1,5 @@
-from conans import ConanFile, tools, os
+from conans import ConanFile, tools
+import os
 
 class BoostDynamic_BitsetConan(ConanFile):
     name = "Boost.Dynamic_Bitset"
