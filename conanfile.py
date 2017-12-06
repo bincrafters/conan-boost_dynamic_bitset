@@ -5,6 +5,7 @@ class BoostDynamic_BitsetConan(ConanFile):
     name = "Boost.Dynamic_Bitset"
     version = "1.65.1"
     requires = \
+        "Boost.Generator/1.65.1@bincrafters/testing", \
         "Boost.Config/1.65.1@bincrafters/testing", \
         "Boost.Core/1.65.1@bincrafters/testing", \
         "Boost.Integer/1.65.1@bincrafters/testing", \
@@ -18,14 +19,10 @@ class BoostDynamic_BitsetConan(ConanFile):
     # BEGIN
 
     url = "https://github.com/bincrafters/conan-boost-dynamic_bitset"
-    description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_1"
     license = "www.boost.org/users/license.html"
     short_paths = True
     build_requires = "Boost.Generator/1.65.1@bincrafters/testing"
-
-    def package_id(self):
-        if self.is_header_only:
-            self.info.header_only()
 
     @property
     def env(self):
@@ -36,5 +33,8 @@ class BoostDynamic_BitsetConan(ConanFile):
         except:
             pass
         return super(self.__class__, self).env
+
+    def package_id(self):
+        self.info.header_only()
 
     # END
