@@ -8,7 +8,8 @@ class BoostDynamic_BitsetConan(ConanFile):
     name = "boost_dynamic_bitset"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_dynamic_bitset"
-    
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["dynamic_bitset"]
     is_header_only = True
 
