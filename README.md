@@ -1,8 +1,8 @@
 ## Package Status
 
-| Bintray | Appveyor | Travis | 
-|---------|-----------|--------|
-|BINTRAY_BADGE_URL|APPVEYOR_BADGE_URL|TRAVIS_BADGE_URL|
+| Bintray | Windows | Linux | OSX |
+|---------|------------|--------|------|
+|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/boost_dynamic_bitset%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/boost_dynamic_bitset%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-boost_dynamic_bitset?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-boost-dynamic_bitset)|[![Build Status](https://travis-ci.org/bincrafters/conan-boost_dynamic_bitset.svg)](https://travis-ci.org/bincrafters/conan-boost_dynamic_bitset)|N/A|
 
 ## Conan.io Information
 
